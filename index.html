@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p13</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+        h2{
+            position: fixed;
+            top: 15%;
+            left: 25%;
+            transform: rotate(-90deg);
+            border-right: solid black 1em;
+        }
+        ol{
+            position: fixed;
+            top: 60%;
+            left: 20%;
+            transform: rotate(-45%)
+        }
+        .any{
+            position: fixed;
+            z-index: -5;
+            top: 0;
+            left: 0;
+            animation-name: movany;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transform: rotate(0),
+        }
+        @keyframes movany {
+            0%{
+                top: 0;
+                left: 0;
+                transform: rotate(0);
+            }
+            20%{
+                top: 80%;
+                left: 15%;
+                transform: rotate(45deg);
+            }
+            40%{
+                top: 60%;
+                left: 80%;
+                transform: rotate(90deg);
+            }
+            60%{
+                top: 8%;
+                left: 60%;
+                transform: rotate(180deg);
+            }
+            80%{
+                top: 40%;
+                left: 50%;
+                transform: rotate(220deg);
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotate(360deg);
+            }
+        }
+        .Escola{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>titol assignatura</h1>
+        <h2>nom cognoms</h2>
+    </header>
+    <main>
+    <ol>
+        <li><a href="">lloc web</a></li>
+        <li><a href="">imatges, video, audio</a></li>
+        <li><a href="">free codecamp</a></li>
+    </ol>
+    </main>
+    <footer>
+        <h3 class="any">22/23</h3>
+        <h4 class="Escola">EASD Alcoi</h4>
+    </footer>
+</body>
+</html>
